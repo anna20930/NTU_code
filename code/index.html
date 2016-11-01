@@ -2,17 +2,22 @@
  <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" type="text/css" href="./style/style.css ">
-  <script async src="./jsfile/file.js"></script>
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./style/style.css ">
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  
+
 </head>
-   <body>    
+   <body>  
+   <script type="text/javascript">
+   function hid3(){
+   var svgContainer=d3.select(".list").append("svg");
+   }
+   hid3();  
+   </script>  
     <div class="top">網站名稱</div>
     <div class="middleLeft">檢索類別:國家、價錢、地點...</div>  
-    <svg height="500" width="500">
-    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-    <polygon points="200,20 80,396 380,156 20,156 320,396" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;"/>
-    </svg>
+
      <div class="middleRight">
       <div class="list" id = "search">站內搜尋</div>
       <div class="list">搜尋結果</div>
